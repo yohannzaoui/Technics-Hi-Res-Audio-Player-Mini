@@ -715,8 +715,7 @@ function drawSpectrum() {
                 // Peak LED — rouge
                 specCtx.fillStyle = 'rgba(255, 60, 34, 0.9)';
             } else if (l < activeLeds) {
-                const alpha = 0.2 + (l / ledCount) * 0.8;
-                specCtx.fillStyle = `rgba(${cr},${cg},${cb},${alpha})`;
+                specCtx.fillStyle = `rgba(${cr},${cg},${cb},0.9)`;
             } else {
                 specCtx.fillStyle = '#111';
             }
@@ -805,17 +804,11 @@ function drawVU() {
                     ctx.fillStyle = `rgba(255,60,34,0.9)`;
                 } else if (active) {
                     if (i > 21) {
-
-                        const a = 0.5 + ratio * 0.5;
-                        ctx.fillStyle = `rgba(255,60,34,${a})`;
+                        ctx.fillStyle = `rgba(255,60,34,0.9)`;
                     } else if (i > 15) {
-
-                        const a = 0.4 + ratio * 0.6;
-                        ctx.fillStyle = `rgba(255,136,0,${a})`;
+                        ctx.fillStyle = `rgba(255,136,0,0.9)`;
                     } else {
-
-                        const a = 0.25 + ratio * 0.75;
-                        ctx.fillStyle = `rgba(${cr},${cg},${cb},${a})`;
+                        ctx.fillStyle = `rgba(${cr},${cg},${cb},0.9)`;
                     }
                 } else {
                     ctx.fillStyle = '#111';
@@ -1010,22 +1003,7 @@ function drawEQCurve() {
     const bandX = eqGains.map((_, i) => (i / (eqGains.length - 1)) * W);
     const bandY = eqGains.map(g => H / 2 - (g / 12) * (H / 2 - 6));
 
-    const grad = ctx.createLinearGradient(0, 0, 0, H);
-    grad.addColorStop(0, 'rgba(200,168,75,0.35)');
-    grad.addColorStop(0.5, 'rgba(200,168,75,0.08)');
-    grad.addColorStop(1, 'rgba(200,168,75,0.02)');
 
-    ctx.beginPath();
-    ctx.moveTo(bandX[0], H / 2);
-    ctx.lineTo(bandX[0], bandY[0]);
-    for (let i = 0; i < bandX.length - 1; i++) {
-        const cpx = (bandX[i] + bandX[i + 1]) / 2;
-        ctx.bezierCurveTo(cpx, bandY[i], cpx, bandY[i + 1], bandX[i + 1], bandY[i + 1]);
-    }
-    ctx.lineTo(bandX[bandX.length - 1], H / 2);
-    ctx.closePath();
-    ctx.fillStyle = grad;
-    ctx.fill();
 
     // Line
     ctx.beginPath();
