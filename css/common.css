@@ -1,6 +1,6 @@
 :root {
     /*--vfd-main: #a3a3a3;*/
-    --vfd-main: #fff3db;
+    --vfd-main: #999284;
     --vfd-red: #ff3c22;
     --vfd-orange: #ff8800;
     --vfd-glow: #02a79c;
@@ -139,18 +139,17 @@ body {
 
 .status-line {
     color: var(--vfd-main);
-    font-size: 0.98rem;
-    letter-spacing: 2.5px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 0 0 8px var(--vfd-shadow-main);
-    height: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     font-family: "Doto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 750;
     font-style: normal;
     font-variation-settings: "ROND"0;
     background-image: radial-gradient(circle, #1a1a1a 1px, transparent 1px);
@@ -376,6 +375,7 @@ body {
     flex-direction: column;
     gap: 3px;
     text-align: left;
+    
 }
 
 .side-indicators {
@@ -454,7 +454,8 @@ body {
 
 #file-info-line {
     color: var(--vfd-main);
-    font-size: 0.98rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
@@ -468,7 +469,7 @@ body {
     border-radius: 1px;
     font-family: "Doto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 750;
     font-style: normal;
     font-variation-settings: "ROND"0;
 }
@@ -488,7 +489,6 @@ body {
     font-size: 0.78rem;
     min-height: 0.78rem;
     color: var(--vfd-main);
-    opacity: 0.6;
     font-weight: 500;
 }
 
@@ -874,9 +874,7 @@ button i {
 }
 
 .playlist-item-num {
-    opacity: 0.45;
-    font-family: 'DS-Digital';
-    font-size: 1rem;
+    font-size: 0,95rem;
     flex-shrink: 0;
     min-width: 20px;
 }
@@ -1082,7 +1080,7 @@ button i {
     font-size: 7px;
     font-weight: 500;
     color: var(--vfd-main);
-    opacity: 0.5;
+    
     text-align: center;
     line-height: 1;
     white-space: nowrap;
@@ -1123,7 +1121,7 @@ button i {
     font-size: 8px;
     font-weight: 500;
     color: var(--vfd-main);
-    opacity: 0.5;
+    
     line-height: 1;
     top: 2px;
     white-space: nowrap;
@@ -1131,7 +1129,7 @@ button i {
 
 .vu-db-scale span.vu-db-red {
     color: var(--vfd-red);
-    opacity: 0.7;
+    
 }
 
 #drop-overlay {
@@ -1473,7 +1471,6 @@ button i {
     letter-spacing: 1.5px;
     color: var(--vfd-main);
     text-shadow: 0 0 8px var(--vfd-shadow-main);
-    opacity: 0.85;
 }
 
 .tray-eq-buttons {
