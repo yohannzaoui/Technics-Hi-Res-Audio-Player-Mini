@@ -1123,7 +1123,7 @@ function changeVolume(d) {
     showVolume();
     _syncKnob();
 }
-function showVolume() { showCenter(`VOL: ${Math.round(audio.volume * 20)}`); }
+function showVolume() { showCenter(`VOL: ${Math.round(audio.volume * 40)}`); }
 
 function _syncKnob() {
     const knob = document.getElementById('volumeKnob');
@@ -1140,7 +1140,7 @@ function _syncKnob() {
         if (!knob || !zoneL || !zoneR) return;
 
         let holdInterval = null;
-        const STEP = 0.02;      // volume step per tick
+        const STEP = 0.01;      // volume step per tick
         const RATE = 30;        // ms per tick — smooth continuous rotation
 
         function startHold(direction) {

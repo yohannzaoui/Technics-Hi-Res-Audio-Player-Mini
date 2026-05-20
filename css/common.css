@@ -1,6 +1,6 @@
 :root {
     /*--vfd-main: #a3a3a3;*/
-    --vfd-main: #83ccc7;
+    --vfd-main: #fff3db;
     --vfd-red: #ff3c22;
     --vfd-orange: #ff8800;
     --vfd-glow: #02a79c;
@@ -60,7 +60,7 @@ body {
     border-right: 1px solid rgba(0, 0, 0, 0.5);
     background-image:
         linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.4) 100%),
-        url('../img/w6L.jpg');
+        url('../img/w6L.webp');
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2), -3px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -70,7 +70,7 @@ body {
     border-left: 1px solid rgba(0, 0, 0, 0.5);
     background-image:
         linear-gradient(-90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.4) 100%),
-        url('../img/w6R.jpg');
+        url('../img/w6R.webp');
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2), 3px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -109,19 +109,15 @@ body {
     flex-direction: column;
     gap: 4px;
     border-radius: 2px;
-    position: relative; /* Pour s'assurer que le z-index fonctionne bien */
-    
+    position: relative;
     box-shadow:
-        /* 1. Profondeur interne (le noir du tube) */
         inset 0 0 25px rgba(0, 0, 0, 1),
-        /* 2. Léger reflet sur le bord interne de la vitre */
         inset 0 0 5px rgba(255, 255, 255, 0.03),
-        /* 3. Ombre portée du boîtier */
         0 3px 6px rgba(0, 0, 0, 0.9),
-        /* 4. GLOW DIFFUS : 3 couches superposées */
-        0 0 10px rgba(169, 252, 246, 0.15),  /* Halo proche léger */
-        0 0 15px rgba(0, 255, 238, 0.1),   /* Diffusion moyenne */
-        0 0 25px rgba(0, 255, 238, 0.05);  /* Grande nappe de lumière */
+        /* 4. GLOW AMBRE CORRIGÉ : Décalé vers le bas pour nettoyer le haut */
+        0 3px 10px rgba(255, 234, 175, 0.25),  /* Décalage Y de 3px, rayon réduit à 10px */
+        0 6px 18px rgba(255, 173, 0, 0.12),   /* Décalage Y de 6px */
+        0 10px 30px rgba(255, 234, 175, 0.04); /* Décalage Y de 10px, nappe écrasée sur le haut */
 }
 
 .status-line {

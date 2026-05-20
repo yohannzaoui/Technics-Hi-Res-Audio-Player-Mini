@@ -1,4 +1,4 @@
-const CACHE_NAME = 'Technics-HR-v8';
+const CACHE_NAME = 'Technics-HR-v9';
 const ASSETS = [
   './',
   './index.html',
@@ -11,8 +11,8 @@ const ASSETS = [
   './img/technics_cover.webp',
   './img/classAA.webp',
   './img/favicon.png',
-  './img/woodL.webp',
-  './img/woodR.webp'
+  './img/w6L.webp',
+  './img/w6R.webp'
 ];
 
 self.addEventListener('install', (e) => {
