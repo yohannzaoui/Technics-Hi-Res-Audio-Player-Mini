@@ -59,16 +59,11 @@ body {
     border-radius: 8px 0 0 8px;
     border-right: 1px solid rgba(0, 0, 0, 0.4);
     background-image:
-        /* 1. REFLET SATINÉ TRÈS ADOUCI (Plus de ligne blanche coupée) */
         linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 5%, rgba(255, 255, 255, 0) 25%),
-        /* 2. OMBRETTE LATÉRALE (Garde le volume sans l'effet miroir oblique) */
         linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%),
-        /* 3. LA TEXTURE BOIS */
         url('../img/w6L.webp');
-    
-    /* Box-shadow adouci : aspect bois ciré / matifié */
-    box-shadow: 
-        inset 0 1px 2px rgba(255, 255, 255, 0.25), /* Un biseau lumineux mais discret */
+    box-shadow:
+        inset 0 1px 2px rgba(255, 255, 255, 0.25),
         inset 0 -2px 8px rgba(0, 0, 0, 0.3),
         -4px 4px 12px rgba(0, 0, 0, 0.5);
 }
@@ -78,15 +73,12 @@ body {
     border-radius: 0 8px 8px 0;
     border-left: 1px solid rgba(0, 0, 0, 0.4);
     background-image:
-        /* 1. REFLET SATINÉ TRÈS ADOUCI */
         linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 5%, rgba(255, 255, 255, 0) 25%),
-        /* 2. OMBRETTE LATÉRALE */
         linear-gradient(-90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%),
-        /* 3. LA TEXTURE BOIS */
         url('../img/w6R.webp');
-    
-    box-shadow: 
-        inset 0 1px 2px rgba(255, 255, 255, 0.25), 
+
+    box-shadow:
+        inset 0 1px 2px rgba(255, 255, 255, 0.25),
         inset 0 -2px 8px rgba(0, 0, 0, 0.3),
         3px 4px 12px rgba(0, 0, 0, 0.5);
 }
@@ -131,10 +123,9 @@ body {
         inset 0 0 25px rgba(0, 0, 0, 1),
         inset 0 0 5px rgba(255, 255, 255, 0.03),
         0 3px 6px rgba(0, 0, 0, 0.9),
-        /* 4. GLOW AMBRE CORRIGÉ : Décalé vers le bas pour nettoyer le haut */
-        0 3px 10px rgba(255, 234, 175, 0.25),  /* Décalage Y de 3px, rayon réduit à 10px */
-        0 6px 18px rgba(255, 173, 0, 0.12),   /* Décalage Y de 6px */
-        0 10px 30px rgba(255, 234, 175, 0.04); /* Décalage Y de 10px, nappe écrasée sur le haut */
+        0 3px 10px rgba(255, 234, 175, 0.25),
+        0 6px 18px rgba(255, 173, 0, 0.12),
+        0 10px 30px rgba(255, 234, 175, 0.04);
 }
 
 .status-line {
@@ -375,7 +366,7 @@ body {
     flex-direction: column;
     gap: 3px;
     text-align: left;
-    
+
 }
 
 .side-indicators {
@@ -406,19 +397,24 @@ body {
 }
 
 @keyframes ind-ab-blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 #ind-ab.ab-waiting {
     color: var(--vfd-red) !important;
-    text-shadow: 0 0 8px rgba(255,60,34,0.7);
+    text-shadow: 0 0 8px rgba(255, 60, 34, 0.7);
     animation: ind-ab-blink 0.6s step-end infinite;
 }
 
 #ind-ab.ab-active {
     color: var(--vfd-red) !important;
-    text-shadow: 0 0 8px rgba(255,60,34,0.7);
+    text-shadow: 0 0 8px rgba(255, 60, 34, 0.7);
     animation: none;
     opacity: 1;
 }
@@ -874,7 +870,7 @@ button i {
 }
 
 .playlist-item-num {
-    font-size: 0,95rem;
+    font-size: 0, 95rem;
     flex-shrink: 0;
     min-width: 20px;
 }
@@ -1080,7 +1076,7 @@ button i {
     font-size: 7px;
     font-weight: 500;
     color: var(--vfd-main);
-    
+
     text-align: center;
     line-height: 1;
     white-space: nowrap;
@@ -1121,7 +1117,7 @@ button i {
     font-size: 8px;
     font-weight: 500;
     color: var(--vfd-main);
-    
+
     line-height: 1;
     top: 2px;
     white-space: nowrap;
@@ -1129,7 +1125,7 @@ button i {
 
 .vu-db-scale span.vu-db-red {
     color: var(--vfd-red);
-    
+
 }
 
 #drop-overlay {
