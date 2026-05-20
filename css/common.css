@@ -139,18 +139,17 @@ body {
 
 .status-line {
     color: var(--vfd-main);
-    font-size: 0.98rem;
-    letter-spacing: 2.5px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 0 0 8px var(--vfd-shadow-main);
-    height: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     font-family: "Doto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 750;
     font-style: normal;
     font-variation-settings: "ROND"0;
     background-image: radial-gradient(circle, #1a1a1a 1px, transparent 1px);
@@ -455,7 +454,8 @@ body {
 
 #file-info-line {
     color: var(--vfd-main);
-    font-size: 0.98rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
@@ -469,7 +469,7 @@ body {
     border-radius: 1px;
     font-family: "Doto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 750;
     font-style: normal;
     font-variation-settings: "ROND"0;
 }
@@ -874,9 +874,7 @@ button i {
 }
 
 .playlist-item-num {
-    opacity: 0.45;
-    font-family: 'DS-Digital';
-    font-size: 1rem;
+    font-size: 0,95rem;
     flex-shrink: 0;
     min-width: 20px;
 }
