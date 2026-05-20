@@ -1,6 +1,6 @@
 :root {
     /*--vfd-main: #a3a3a3;*/
-    --vfd-main: #fff3db;
+    --vfd-main: #999284;
     --vfd-red: #ff3c22;
     --vfd-orange: #ff8800;
     --vfd-glow: #02a79c;
@@ -376,6 +376,7 @@ body {
     flex-direction: column;
     gap: 3px;
     text-align: left;
+    
 }
 
 .side-indicators {
@@ -488,7 +489,6 @@ body {
     font-size: 0.78rem;
     min-height: 0.78rem;
     color: var(--vfd-main);
-    opacity: 0.6;
     font-weight: 500;
 }
 
@@ -1082,7 +1082,7 @@ button i {
     font-size: 7px;
     font-weight: 500;
     color: var(--vfd-main);
-    opacity: 0.5;
+    
     text-align: center;
     line-height: 1;
     white-space: nowrap;
@@ -1123,7 +1123,7 @@ button i {
     font-size: 8px;
     font-weight: 500;
     color: var(--vfd-main);
-    opacity: 0.5;
+    
     line-height: 1;
     top: 2px;
     white-space: nowrap;
@@ -1131,7 +1131,7 @@ button i {
 
 .vu-db-scale span.vu-db-red {
     color: var(--vfd-red);
-    opacity: 0.7;
+    
 }
 
 #drop-overlay {
@@ -1473,7 +1473,6 @@ button i {
     letter-spacing: 1.5px;
     color: var(--vfd-main);
     text-shadow: 0 0 8px var(--vfd-shadow-main);
-    opacity: 0.85;
 }
 
 .tray-eq-buttons {
