@@ -167,8 +167,6 @@ button:active {
     border: 1px solid var(--btn-border);
     border-radius: 2px;
     margin-top: auto;
-
-    /* Effet de profondeur */
     box-shadow:
         0 4px 6px -1px rgba(0, 0, 0, 0.2),
         0 2px 4px -1px rgba(0, 0, 0, 0.1);
@@ -198,36 +196,22 @@ input[type="range"]::-webkit-slider-thumb {
     height: 14px;
     border-radius: 2px;
     border: 1px solid var(--btn-border);
-
-    /* 1. Dégradé assombri : on réduit le blanc à 10% d'opacité max */
     background: linear-gradient(to bottom,
             rgba(255, 255, 255, 0.07) 0%,
-            /* Lumière très discrète */
             var(--shuttle-thumb) 45%,
-            /* Couleur de base */
-            rgba(0, 0, 0, 0.15) 100%
-            /* Ombre portée sur le bas */
-        ), var(--shuttle-thumb);
-
-    /* 2. Ombres adoucies */
+            rgba(0, 0, 0, 0.15) 100%), var(--shuttle-thumb);
     box-shadow:
         0 2px 3px rgba(0, 0, 0, 0.3),
-        /* Ombre externe */
         inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        /* Reflet haut quasi invisible */
         inset 0 -1px 1px rgba(0, 0, 0, 0.2);
-    /* Ombre basse pour l'assise */
-
     transition: transform 0.1s ease;
 }
 
 input[type="range"]:active::-webkit-slider-thumb {
     transform: scale(0.95);
-    /* Légère pression */
     box-shadow:
         0 1px 2px rgba(0, 0, 0, 0.5),
         inset 0 1px 3px rgba(0, 0, 0, 0.4);
-    /* L'ombre interne s'inverse pour simuler l'appui */
 }
 
 .btn-power {

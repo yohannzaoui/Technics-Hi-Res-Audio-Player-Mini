@@ -49,7 +49,7 @@ function getFileCover(file, callback) {
             onSuccess: (tag) => {
                 const t = tag.tags;
                 const pic = t.picture;
-                
+
                 if (!metaCache[file.name]) {
                     metaCache[file.name] = {
                         title: t.title || file.name.replace(/\.[^.]+$/, ''),
