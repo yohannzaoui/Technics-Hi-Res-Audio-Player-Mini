@@ -347,13 +347,23 @@ input[type="range"]:active::-webkit-slider-thumb {
     transition: transform 0.8s ease-in-out;
 }
 
+.chassis-dsp-logo {
+    width: 60px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.3;
+}
+
 .door-label {
     font-size: 9px;
     font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--btn-text);
-    margin-left: 1200px;
+    margin-left: 1190px;
+    opacity: 0.5;
     user-select: none;
     text-shadow:
         -1px -1px 0px rgba(0, 0, 0, 0.6),
