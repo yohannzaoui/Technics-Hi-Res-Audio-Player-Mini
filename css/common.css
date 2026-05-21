@@ -123,9 +123,10 @@ body {
         inset 0 0 25px rgba(0, 0, 0, 1),
         inset 0 0 5px rgba(255, 255, 255, 0.03),
         0 3px 6px rgba(0, 0, 0, 0.9),
-        0 3px 10px rgba(255, 234, 175, 0.25),
-        0 6px 18px rgba(255, 173, 0, 0.12),
-        0 10px 30px rgba(255, 234, 175, 0.04);
+        /* Lignes modifiées pour réduire le glow */
+        0 2px 6px rgba(255, 234, 175, 0.12),   /* Moins diffus, opacité 25% -> 12% */
+        0 4px 10px rgba(255, 173, 0, 0.06),   /* Moins diffus, opacité 12% -> 6% */
+        0 6px 15px rgba(255, 234, 175, 0.02);  /* Rayon réduit, opacité 4% -> 2% */
 }
 
 .status-line {
