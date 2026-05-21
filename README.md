@@ -146,12 +146,4 @@ Accessible by opening the CD tray:
 
 ---
 
-## 📝 Persistent Settings
-
-Saved automatically via `localStorage`:
-
-- **Theme** — Dark or Light chassis
-
----
-
 *Developed with passion for vintage audio by Yohann Zaoui — [Yohann Zaoui](https://github.com/HDSoundSystem)*
