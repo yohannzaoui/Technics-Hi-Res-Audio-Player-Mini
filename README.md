@@ -4,9 +4,10 @@ A high-fidelity web application emulating the aesthetics and user experience of 
 
 <img width="1257" height="197" alt="Technics_cover" src="https://github.com/user-attachments/assets/4cbd644c-e987-4431-b7e1-9cbaeafd9f76" />
 .
-<img width="1866" height="821" alt="1" src="https://github.com/user-attachments/assets/257b0c46-7c81-4334-8b02-b30e8b278430" />
+<img width="1896" height="820" alt="1" src="https://github.com/user-attachments/assets/9cd164d8-8538-4e71-8e6c-960a385f9de2" />
 .
-<img width="1856" height="809" alt="2" src="https://github.com/user-attachments/assets/e94527da-5fe2-4930-ab89-fb7d1148209c" />
+<img width="1893" height="826" alt="2" src="https://github.com/user-attachments/assets/599a24bc-0d87-40f0-9610-5950596a6a0f" />
+
 
 ## 📱 Overview
 
