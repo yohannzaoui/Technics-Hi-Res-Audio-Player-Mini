@@ -1,18 +1,18 @@
-const CACHE_NAME = 'Technics-HR-v9';
+const CACHE_NAME = 'Technics-HR-v10';
 const ASSETS = [
   './',
   './index.html',
   './css/common.css',
   './css/style-dark.css',
-  './css/style-light.css',
   './script.js',
   './img/technics_brand_1.webp',
   './img/technics_brand_2.webp',
   './img/technics_cover.webp',
-  './img/classAA.webp',
+  './img/class_aa_2.png',
   './img/favicon.png',
   './img/w6L.webp',
-  './img/w6R.webp'
+  './img/w6R.webp',
+  './img/dsp-w.png'
 ];
 
 self.addEventListener('install', (e) => {

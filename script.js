@@ -941,7 +941,7 @@ function onEQSlider(band, value) {
     if (vl) vl.textContent = (g > 0 ? '+' : '') + g;
     currentPreset = null;
     const ind = document.getElementById('eq-preset-ind');
-    if (ind) ind.textContent = 'EQ: CUSTOM';
+    if (ind) ind.textContent = 'DSP: CUSTOM';
     setThumbPos(band, g);
     drawEQCurve();
 }
@@ -1057,7 +1057,7 @@ function applyEQPreset(name) {
     trebleLevel = gains[9];
     currentPreset = name === 'flat' ? null : name;
     const ind = document.getElementById('eq-preset-ind');
-    if (ind) ind.textContent = currentPreset ? `EQ: ${currentPreset.toUpperCase()}` : '';
+    if (ind) ind.textContent = currentPreset ? `DSP: ${currentPreset.toUpperCase()}` : '';
     setTimeout(updateStatusText, 1500);
 }
 
