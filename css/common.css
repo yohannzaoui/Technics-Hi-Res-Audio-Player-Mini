@@ -123,17 +123,10 @@ body {
         inset 0 0 25px rgba(0, 0, 0, 1),
         inset 0 0 5px rgba(255, 255, 255, 0.03),
         0 3px 6px rgba(0, 0, 0, 0.9),
-<<<<<<< HEAD
         /* Nouveau glow léger en bleu givré (#d1e5ed) */
         0 2px 6px rgba(209, 229, 237, 0.15),
         0 4px 12px rgba(209, 229, 237, 0.08),
         0 8px 20px rgba(209, 229, 237, 0.03);
-=======
-        /* Lignes modifiées pour réduire le glow */
-        0 2px 6px rgba(255, 234, 175, 0.12),   /* Moins diffus, opacité 25% -> 12% */
-        0 4px 10px rgba(255, 173, 0, 0.06),   /* Moins diffus, opacité 12% -> 6% */
-        0 6px 15px rgba(255, 234, 175, 0.02);  /* Rayon réduit, opacité 4% -> 2% */
->>>>>>> daedc6faf91f090207e700252430aaabf9bec712
 }
 
 .status-line {
