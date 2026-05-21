@@ -39,9 +39,9 @@
             <div class="header-line">
                 <img src="img/technics_brand_1.webp" alt="Technics"
                     class="brand-logo-img" id="header-brand-logo"
-                    onclick="toggleLightVersion(event)">
+                    >
                 <span class="model-text">HIGH RESOLUTION AUDIO PLAYER</span>
-                <img src="img/classAA.webp" alt="ClassAA" class="classaa-logo">
+                <img src="img/class_aa_2.png" alt="ClassAA" class="classaa-logo">
             </div>
 
             <div class="main-body">
@@ -260,7 +260,7 @@
                                     class="fa-solid fa-volume-xmark"></i></button></div>
                         <div class="btn-labeled"><span
                                 class="btn-label-power">BYPASS
-                                EQ/TONE</span><button
+                                DSP/TONE</span><button
                                 class="btn-transport"
                                 onclick="toggleBypass()"><i
                                     class="fa-solid fa-sliders"></i></button></div>
@@ -269,16 +269,15 @@
                     <div class="tray-assembly">
                         <div class="tray-door" id="trayDoor"
                             onclick="toggleTray()"><span
-                                class="door-label">OPEN</span></div>
+                                class="door-label">PUSH OPEN</span></div>
                         <div class="tray-hidden-panel" id="trayPanel">
                             <div class="tray-inner">
                                 <div class="tray-eq-row">
-                                    <span class="tray-row-label">EQ
-                                        PRESETS</span>
+                                    <span class="tray-row-label">D.S.P</span>
                                     <div class="tray-eq-buttons">
                                         <button
                                             class="btn-eq-custom"
-                                            onclick="EQCustom()">EQ
+                                            onclick="EQCustom()">DSP
                                             CUSTOM</button>
                                         <button
                                             onclick="applyEQPreset('rock')">ROCK</button>
@@ -502,13 +501,7 @@
                                 rel="noopener noreferrer">
                                 GITHUB
                             </a></span>
-                        <span><a
-                                href="#"
-                                id="light-toggle-link"
-                                class="color-link"
-                                onclick="toggleLightVersion(event)">
-                                LIGHT VERSION
-                            </a></span>
+                        
                     </div>
                 </div>
             </div>
@@ -519,7 +512,7 @@
             <div id="eqCustomModal" class="draggable-popup">
                 <div class="draggable-popup-header" id="eqCustomDragHandle">
                     <span class="draggable-popup-title">10-BANDS
-                        EQUALIZER</span>
+                        D.S.P.</span>
                     <button class="draggable-popup-close"
                         onclick="document.getElementById('eqCustomModal').classList.remove('open')">✕</button>
                 </div>

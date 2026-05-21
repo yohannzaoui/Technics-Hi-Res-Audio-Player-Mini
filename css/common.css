@@ -1,6 +1,6 @@
 :root {
-    /*--vfd-main: #a3a3a3;*/
-    --vfd-main: #999284;
+    --vfd-main: #d1e5ed;
+    /*--vfd-main: #999284;*/
     --vfd-red: #ff3c22;
     --vfd-orange: #ff8800;
     --vfd-glow: #02a79c;
@@ -123,9 +123,10 @@ body {
         inset 0 0 25px rgba(0, 0, 0, 1),
         inset 0 0 5px rgba(255, 255, 255, 0.03),
         0 3px 6px rgba(0, 0, 0, 0.9),
-        0 3px 10px rgba(255, 234, 175, 0.25),
-        0 6px 18px rgba(255, 173, 0, 0.12),
-        0 10px 30px rgba(255, 234, 175, 0.04);
+        /* Nouveau glow léger en bleu givré (#d1e5ed) */
+        0 2px 6px rgba(209, 229, 237, 0.15),
+        0 4px 12px rgba(209, 229, 237, 0.08),
+        0 8px 20px rgba(209, 229, 237, 0.03);
 }
 
 .status-line {
@@ -140,7 +141,7 @@ body {
     position: relative;
     font-family: "Doto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 750;
+    font-weight: 650;
     font-style: normal;
     font-variation-settings: "ROND"0;
     background-image: radial-gradient(circle, #1a1a1a 1px, transparent 1px);
@@ -450,7 +451,7 @@ body {
 
 #file-info-line {
     color: var(--vfd-main);
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     letter-spacing: 1px;
     cursor: pointer;
     white-space: nowrap;
@@ -465,7 +466,7 @@ body {
     border-radius: 1px;
     font-family: "Doto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 750;
+    font-weight: 650;
     font-style: normal;
     font-variation-settings: "ROND"0;
 }
@@ -533,7 +534,7 @@ body {
 .num-pad {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    gap: 15px;
+    gap: 5px;
     margin-top: 7px;
 }
 
