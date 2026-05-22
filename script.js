@@ -91,9 +91,9 @@ function renderPlaylistItems() {
 
         const cover = document.createElement('img');
         cover.className = 'playlist-item-cover';
-        cover.src = 'img/technics_cover.webp';
+        cover.src = 'img/technics_cover.png';
         if (coverCache[file.name]) {
-            cover.src = coverCache[file.name] || 'img/technics_cover.webp';
+            cover.src = coverCache[file.name] || 'img/technics_cover.png';
         } else {
             getFileCover(file, (url) => { if (url) cover.src = url; });
         }
@@ -339,7 +339,7 @@ function loadTrack(index) {
             for (let i = 0; i < data.length; i++) base64 += String.fromCharCode(data[i]);
             modalImg.src = `data:${format};base64,${window.btoa(base64)}`;
             coverCache[file.name] = modalImg.src;
-        } else { modalImg.src = "img/technics_cover.webp"; }
+        } else { modalImg.src = "img/technics_cover.png"; }
         updateMediaSession({ title: meta.title || file.name, artist: meta.artist || 'Unknown Artist', album: meta.album || 'Unknown Album' });
     };
 
@@ -378,7 +378,7 @@ function updateMediaSession(metadata = {}) {
         album: metadata.album || fileInfoLine.innerText.split(' - ')[1] || 'Unknown Album',
         artwork: [
             {
-                src: modalImg.src || 'img/technics_cover.webp',
+                src: modalImg.src || 'img/technics_cover.png',
                 sizes: '512x512',
                 type: 'image/png'
             }
