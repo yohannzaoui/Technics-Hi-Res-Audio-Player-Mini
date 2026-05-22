@@ -61,7 +61,7 @@ body {
     background-image:
         linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 5%, rgba(255, 255, 255, 0) 25%),
         linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%),
-        url('../img/w6L.webp');
+        url('/img/w6L.webp');
     box-shadow:
         inset 0 1px 2px rgba(255, 255, 255, 0.25),
         inset 0 -2px 8px rgba(0, 0, 0, 0.3),
@@ -75,7 +75,7 @@ body {
     background-image:
         linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 5%, rgba(255, 255, 255, 0) 25%),
         linear-gradient(-90deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%),
-        url('../img/w6R.webp');
+        url('/img/w6R.webp');
 
     box-shadow:
         inset 0 1px 2px rgba(255, 255, 255, 0.25),
