@@ -1362,12 +1362,3 @@ window.addEventListener('beforeunload', (e) => {
     }
 });
 document.addEventListener('DOMContentLoaded', updateEjectAnimation);
-
-const { ipcRenderer } = require('electron');
-
-ipcRenderer.on('media-control', (event, action) => {
-    if (action === 'play-pause') {
-    } else if (action === 'next') {
-    } else if (action === 'prev') {
-    }
-});
