@@ -8,7 +8,7 @@
             content="Technics, Hi-Res Audio, Audio Player, Mini, HiFi, Touchscreen, Music Player, Web App, flac, mp3, music">
         <meta name="author" content="Yohann Zaoui HDSoundSystem">
         <link rel="manifest" href="manifest.json">
-        <link id="main-stylesheet" rel="stylesheet" href="css/style-dark.css">
+        <link id="main-stylesheet" rel="stylesheet" href="style.css">
         <link rel="icon" type="image/png" href="img/favicon.png">
         <link rel="apple-touch-icon" href="img/favicon.png">
         <script
@@ -38,10 +38,10 @@
 
             <div class="header-line">
                 <img src="img/technics_brand_1.webp" alt="Technics"
-                    class="brand-logo-img" id="header-brand-logo"
-                    >
+                    class="brand-logo-img" id="header-brand-logo">
                 <span class="model-text">HIGH RESOLUTION AUDIO PLAYER</span>
-                <img src="img/class_aa_2.png" alt="ClassAA" class="classaa-logo">
+                <img src="img/class_aa_2.png" alt="ClassAA"
+                    class="classaa-logo">
             </div>
 
             <div class="main-body">
@@ -125,19 +125,19 @@
                             </div>
                             <div class="total-time-block">
                                 <div class="total-time-unit">
-                                    <div class="total-time-label">TRACK
+                                    <div class="total-time-label">TIME
                                         REMAINING</div>
                                     <div class="total-time-display"
                                         id="track-time-remaining">
                                         <span class="tt-sign">-</span><span
                                             class="tt-digit"
-                                            id="tr-m1">0</span><span
+                                            id="tr-m1">-</span><span
                                             class="tt-digit"
-                                            id="tr-m2">0</span><span
+                                            id="tr-m2">-</span><span
                                             class="tt-sep">:</span><span
                                             class="tt-digit"
-                                            id="tr-s1">0</span><span
-                                            class="tt-digit" id="tr-s2">0</span>
+                                            id="tr-s1">-</span><span
+                                            class="tt-digit" id="tr-s2">-</span>
                                     </div>
                                 </div>
                                 <div class="total-time-unit">
@@ -148,19 +148,19 @@
                                         <span class="tt-sign"
                                             id="tt-rem-sign">-</span><span
                                             class="tt-digit"
-                                            id="tt-rem-h1">0</span><span
+                                            id="tt-rem-h1">-</span><span
                                             class="tt-digit"
-                                            id="tt-rem-h2">0</span><span
+                                            id="tt-rem-h2">-</span><span
                                             class="tt-sep">:</span><span
                                             class="tt-digit"
-                                            id="tt-rem-m1">0</span><span
+                                            id="tt-rem-m1">-</span><span
                                             class="tt-digit"
-                                            id="tt-rem-m2">0</span><span
+                                            id="tt-rem-m2">-</span><span
                                             class="tt-sep">:</span><span
                                             class="tt-digit"
-                                            id="tt-rem-s1">0</span><span
+                                            id="tt-rem-s1">-</span><span
                                             class="tt-digit"
-                                            id="tt-rem-s2">0</span>
+                                            id="tt-rem-s2">-</span>
                                     </div>
                                 </div>
                                 <div class="total-time-unit">
@@ -169,18 +169,18 @@
                                     <div class="total-time-display"
                                         id="total-time-fixed">
                                         <span class="tt-digit"
-                                            id="tt-h1">0</span><span
+                                            id="tt-h1">-</span><span
                                             class="tt-digit"
-                                            id="tt-h2">0</span><span
+                                            id="tt-h2">-</span><span
                                             class="tt-sep">:</span><span
                                             class="tt-digit"
-                                            id="tt-m1">0</span><span
+                                            id="tt-m1">-</span><span
                                             class="tt-digit"
-                                            id="tt-m2">0</span><span
+                                            id="tt-m2">-</span><span
                                             class="tt-sep">:</span><span
                                             class="tt-digit"
-                                            id="tt-s1">0</span><span
-                                            class="tt-digit" id="tt-s2">0</span>
+                                            id="tt-s1">-</span><span
+                                            class="tt-digit" id="tt-s2">-</span>
                                     </div>
                                 </div>
                             </div>
@@ -502,7 +502,7 @@
                                 rel="noopener noreferrer">
                                 GITHUB
                             </a></span>
-                        
+
                     </div>
                 </div>
             </div>
@@ -586,26 +586,6 @@
                 <img src="img/technics_brand_1.webp" alt="Technics"
                     class="eq-brand-logo">
             </div>
-
-            <script>
-                (function() {
-                    const DARK = 'css/style-dark.css';
-                    const LIGHT = 'css/style-light.css';
-                    let isDark  = false;
-
-                    window.toggleLightVersion = function(e) {
-                        e.preventDefault();
-                        const link = document.getElementById('main-stylesheet');
-                        const btn  = document.getElementById('light-toggle-link');
-                        const logo = document.getElementById('header-brand-logo');
-                        isDark = !isDark;
-                        link.href  = isDark ? LIGHT : DARK;
-                        btn.textContent = isDark ? 'Dark Version' : 'Light Version';
-                        if (logo) logo.src = isDark ? 'img/technics_brand_2.webp' : 'img/technics_brand_1.webp';
-                        if (typeof invalidateColorCache === 'function') invalidateColorCache();
-                    };
-                })();
-            </script>
 
             <script data-goatcounter="https://technics.goatcounter.com/count"
                 async src="//gc.zgo.at/count.js"></script>
