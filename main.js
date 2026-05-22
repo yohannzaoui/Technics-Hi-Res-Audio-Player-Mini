@@ -62,18 +62,26 @@ function createWindow() {
   ipcMain.on('update-thumbar', (event, isPlaying) => {
     setThumbar(isPlaying);
   });
+}
 
-  globalShortcut.register('MediaPlayPause', () => {
-    win.webContents.send('media-control', 'play-pause');
+function registerMediaKeys() {
+  // Play / Pause
+  const playPauseReg = globalShortcut.register('MediaPlayPause', () => {
+    if (win) win.webContents.send('media-control', 'play-pause');
   });
+  if (!playPauseReg) console.log('Échec de l’enregistrement de MediaPlayPause (probablement intercepté par une autre app)');
 
-  globalShortcut.register('MediaNextTrack', () => {
-    win.webContents.send('media-control', 'next');
+  // Next
+  const nextReg = globalShortcut.register('MediaNextTrack', () => {
+    if (win) win.webContents.send('media-control', 'next');
   });
+  if (!nextReg) console.log('Échec de l’enregistrement de MediaNextTrack');
 
-  globalShortcut.register('MediaPreviousTrack', () => {
-    win.webContents.send('media-control', 'prev');
+  // Previous
+  const prevReg = globalShortcut.register('MediaPreviousTrack', () => {
+    if (win) win.webContents.send('media-control', 'prev');
   });
+  if (!prevReg) console.log('Échec de l’enregistrement de MediaPreviousTrack');
 }
 
 function setThumbar(isPlaying) {
@@ -97,7 +105,11 @@ function setThumbar(isPlaying) {
   ]);
 }
 
-app.whenReady().then(createWindow);
+// Enregistrement propre au démarrage
+app.whenReady().then(() => {
+  createWindow();
+  registerMediaKeys(); 
+});
 
 app.on('will-quit', () => {
   globalShortcut.unregisterAll();
