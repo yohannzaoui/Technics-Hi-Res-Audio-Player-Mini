@@ -1,4 +1,4 @@
-const CACHE_NAME = 'Technics-HR-v11';
+const CACHE_NAME = 'Technics-HR-BE-v11';
 const ASSETS = [
   './',
   './index.html',
