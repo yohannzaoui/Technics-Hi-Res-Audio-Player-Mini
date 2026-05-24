@@ -941,7 +941,7 @@ function onEQSlider(band, value) {
     if (vl) vl.textContent = (g > 0 ? '+' : '') + g;
     currentPreset = null;
     const ind = document.getElementById('eq-preset-ind');
-    if (ind) ind.textContent = 'DSP: CUSTOM';
+    if (ind) ind.textContent = 'DSP: PERSONALIZED';
     setThumbPos(band, g);
     drawEQCurve();
 }
