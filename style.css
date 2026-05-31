@@ -1,6 +1,5 @@
 :root {
     --vfd-main: #d1e5ed;
-    /*--vfd-main: #999284;*/
     --vfd-red: #ff3c22;
     --vfd-orange: #ff8800;
     --vfd-glow: #02a79c;
@@ -1501,7 +1500,8 @@ button i {
 }
 
 .player-container {
-    background: linear-gradient(180deg, var(--panel-top) 0%, var(--panel-color) 40%, var(--panel-bottom) 100%);
+    background: url('img/chassis_2.png');
+    /*linear-gradient(180deg, var(--panel-top) 0%, var(--panel-color) 40%, var(--panel-bottom) 100%);*/
     width: 100%;
     max-width: 1650px;
     border: 1px solid var(--panel-border);
@@ -1828,12 +1828,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 .tray-door {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg,
-            var(--panel-top) 0%,
-            var(--panel-top) 0%,
-            #171717 0%,
-            var(--panel-bottom) 97%,
-            var(--panel-bottom) 100%);
+    background: url('img/chassis_2.png');
     border: 2px solid var(--panel-border);
     border-bottom: 1px solid #080808;
     border-radius: 2px;
