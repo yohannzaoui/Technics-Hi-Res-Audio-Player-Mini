@@ -575,24 +575,18 @@ let specAnalyser, specDataArray, specCtx;
 function initAudio() {
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     const source = audioCtx.createMediaElementSource(audio);
-    // Splitter stereo
     splitter = audioCtx.createChannelSplitter(2);
-    analyserL = audioCtx.createAnalyser(); analyserL.fftSize = 64;
-    analyserR = audioCtx.createAnalyser(); analyserR.fftSize = 64;
+    analyserL = audioCtx.createAnalyser(); analyserL.fftSize = 512;
+    analyserR = audioCtx.createAnalyser(); analyserR.fftSize = 512;
     dataArrayL = new Uint8Array(analyserL.frequencyBinCount);
     dataArrayR = new Uint8Array(analyserR.frequencyBinCount);
-    // Spectrum analyser (higher resolution, pre-EQ for accuracy)
     specAnalyser = audioCtx.createAnalyser();
     specAnalyser.fftSize = 256;
     specAnalyser.smoothingTimeConstant = 0.75;
     specDataArray = new Uint8Array(specAnalyser.frequencyBinCount);
-    // 10-band EQ filters
     const filters = initEQFilters();
-    // Keep bassFilter/trebleFilter pointing to first/last for bypass compatibility
     bassFilter = filters[0];
     trebleFilter = filters[9];
-    // Override frequencies for bass/treble tone controls to audible ranges
-    // (EQ band 0 = 32Hz lowshelf is inaudible on most speakers)
     bassFilter.frequency.value = 200;    // standard hi-fi bass shelf
     trebleFilter.frequency.value = 10000; // standard hi-fi treble shelf
     // Loudness gain
