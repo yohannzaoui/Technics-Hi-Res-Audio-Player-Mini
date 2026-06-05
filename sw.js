@@ -1,4 +1,4 @@
-const CACHE_NAME = 'Technics-HR-BE-v12';
+const CACHE_NAME = 'Technics-HR-BE-v13';
 const ASSETS = [
   './',
   './index.html',
@@ -11,7 +11,7 @@ const ASSETS = [
   './img/favicon.png',
   './img/w6L.webp',
   './img/w6R.webp',
-  './img/chassis_2.png',
+  './img/chassis_3.png',
   './img/dsp-w.png'
 ];
 

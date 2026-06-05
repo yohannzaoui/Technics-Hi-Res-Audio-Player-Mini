@@ -1500,7 +1500,7 @@ button i {
 }
 
 .player-container {
-    background: url('img/chassis_2.png');
+    background: url('img/chassis_3.png');
     /*linear-gradient(180deg, var(--panel-top) 0%, var(--panel-color) 40%, var(--panel-bottom) 100%);*/
     width: 100%;
     max-width: 1650px;
@@ -1828,7 +1828,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 .tray-door {
     position: absolute;
     inset: 0;
-    background: url('img/chassis_2.png');
+    background: url('img/chassis_3.png');
     border: 2px solid var(--panel-border);
     border-bottom: 1px solid #080808;
     border-radius: 2px;
